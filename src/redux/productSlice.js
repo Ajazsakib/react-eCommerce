@@ -53,7 +53,7 @@ const productSilce = createSlice({
         {
             state.products.forEach((product) =>
             {
-                if (product.id == action.payload) {
+                if (product.id === action.payload) {
                     product.isEdit = false
                 }
             })

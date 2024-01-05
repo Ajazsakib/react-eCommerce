@@ -8,7 +8,6 @@ import { editProduct, editAction, editProductCancel, updateProduct, sortByPrice,
 import { addToCart } from "../../redux/cartSlice";
 const Products = () =>
 {
-    const [products, setProducts] = useState(data);
     const [isSorted, setIsSorted] = useState(false);
 
     const productsState = useSelector((state) =>
