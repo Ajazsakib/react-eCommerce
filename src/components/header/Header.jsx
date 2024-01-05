@@ -28,12 +28,12 @@ const Header = () =>
                             cartItemCount > 0 && <span className={HeaderStyle.cartCount}>{cartItemCount}</span>
                         }
                     </Link></li>
-                    <li><a href="#">
+                    <li><Link to="/">
                         <span className="username">Hi...</span>
                         <span className="usericon"><span class="material-symbols-outlined">
                             person
                         </span></span>
-                    </a></li>
+                    </Link></li>
                 </ul>
             </div>
         </div>
