@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import productStyle from "./products.module.css";
-import { data } from "../../productsData";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useSelector, useDispatch } from "react-redux";
@@ -15,7 +14,7 @@ const Products = () =>
         return state.productReducer.products
     })
     const [beforeEdit, setBeforeEdit] = useState(productsState)
-    const [originalProducts, setOriginalProducts] = useState(productsState);
+    const originalProducts = productsState;
 
     const dispatch = useDispatch()
 
@@ -144,7 +143,7 @@ const Products = () =>
                         <div className={productStyle.productBox}>
                             <div className={productStyle.left}>
                                 <div className={productStyle.img}>
-                                    <img src={item.picture} />
+                                    <img src={item.picture} alt={item.picture} />
                                 </div>
                                 <div className={productStyle.details}>
                                     <div className="titleAndPriice">
