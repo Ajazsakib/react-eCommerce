@@ -1,0 +1,141 @@
+.products {
+    width: 80%;
+    margin: 50px auto;
+}
+.productBox {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.productBox .left {
+    width: 50%;
+    display: flex;
+}
+.productBox .left .img {
+    width: 180px;
+    height: 180px;
+    margin-right: 30px;
+}
+.productBox .left .img img {
+    width: 100%;
+    height: 100%;
+}
+.productBox .left .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.productBox .left .details .title {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 600;
+    width: 150px;
+    margin-bottom: 10px;
+    
+}
+.productBox .left .details .title:focus {
+    outline: 0;
+}
+.productBox .left .details .price {
+    font-size: 20px;
+    font-weight: 500;
+    width: 150px;
+}
+.productBox .left .details .price:focus {
+    outline: 0;
+}
+.currencyPrefix {
+    font-size: 20px;
+    font-weight: 500;
+}
+.productBox .left .details .rating {
+    cursor: pointer;
+}
+.productBox .right {
+    width: 50%;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.productBox .right .description {
+  
+    text-align: justify;
+    display: flex;
+        justify-content: flex-end;
+}
+.productBox .right .description textarea {
+    padding: 6px;
+   
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #999999;
+}
+.productBox .right .description textarea:focus {
+    outline: 0;
+}
+.productBox .right .description p {
+    width: 75%;
+}
+.productBox .right .action {
+    display: flex;
+    justify-content: flex-end;
+}
+.productBox .right .action .addToCart {
+    background-color: brown;
+    padding: 12px;
+    color: #ffffff;
+    font-weight: 16px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+
+.productBox .right .action .left {
+    display: flex;
+    justify-content: flex-end;
+}
+.productBox .right .action .right {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+.productBox .right .action .right button {
+    padding: 8px 16px;
+    border: 0;
+    border: 1px solid #333333;
+    color: #333333;
+    margin: 0 6px;
+    background: transparent;
+    cursor: pointer;
+}
+.productBox .right .action .right span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.productBox .right .action .edit {
+    color: green
+}
+.productBox .right .action .delete {
+    color: #c20302;
+}
+.sortBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.sortBtn button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: blueviolet;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.addProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+.addProductBox {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.addProductBox .formGroup {
+    display: flex;
+    flex-direction: column;
+}
+.addProductBox .formGroup label {
+    font-size: 14px;
+}
+.addProductBox .formControl {
+    height: 30px;
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+.addProductBox .formControl:focus {
+    outline: 0;
+}
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+.submit button {
+    background: transparent;
+    border: 1px solid #999999;
+    color: #333333;
+    padding: 6px 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
